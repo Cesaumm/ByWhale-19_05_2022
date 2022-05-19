@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/form.css" media="screen">
+    <title>Formulário</title>
+</head>
+<body>
+    <!--inicio do cabeçalho-->
+    <div>
+        <h1 id="titulo">VOCÊ SABE UTILIZAR BEM SUA ÁGUA?</h1>
+        <p id="subtitulo">responda de forma honesta</p>
+        <br>
+    </div>
+    <!--fim do cabeçalho-->
+    <!--inicio do formulário-->
+    <form>
+        <!--inicio dos dados pessoais-->
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+        <div class="campo">
+            <label for="idade"><strong>Idade</strong></label>
+            <select name="idade" id="idade">
+                <option selected disabled value="">Selecione</option>
+                <option>0 a 13 anos</option>
+                <option>14 a 17 anos</option>
+                <option>18 a 24 anos</option>
+                <option>25 a 60 anos</option>
+                <option>Mais do que 60 anos</option>
+            </select>
+        </div>
+        <!--fim dos dados pessoais-->
+        <!--primeira pergunta do formulario-->
+        <fieldset class="grupo">
+            <div class="campo">
+                <label><strong>Marque as ações que você realizou nos últimos 7 dias:</strong></label>
+                <br>
+                <div class="campo">
+                    <label for="banho">Tomar 14 banhos ou mais</label>
+                    <input type="checkbox" name="pergunta1" id="banho">
+                </div>
+                <div class="campo">
+                    <label for="mangueira">Lavar a casa com mangueira</label>
+                    <input type="checkbox" name="pergunta1" id="mangueira">
+                </div>
+                <div class="campo">
+                    <label for="carro">Lavar o carro</label>
+                    <input type="checkbox" name="pergunta1" id="carro">
+                </div>
+                <div class="campo">
+                    <label for="moto">Lavar a moto</label>
+                    <input type="checkbox" name="pergunta1" id="moto">
+                </div>
+            </div>
+        </fieldset>
+        <!--segunda pergunta do formulario-->
+        <div class="campo">
+            <label for="maos"><strong>Costuma fechar a torneira enquanto ensaboa as mãos?</strong></label>
+            <select name="pergunta2" id="maos">
+                <option selected disabled value="">Selecione</option>
+                <option>Sim</option>
+                <option>Não</option>
+            </select>
+        </div>
+        <!--terceira pergunta do formulario-->
+        <div class="campo">
+            <label><strong>Você costuma tomar banho quantas vezes por dia?</strong></label>
+            <label for="resposta1">
+                <input type="radio" name="pergunta3" id="resposta1" checked>Não tomo banho
+            </label>
+            <label for="resposta2">
+                <input type="radio" name="pergunta3" id="resposta2">Apenas uma vez
+            </label>
+            <label for="resposta3">
+                <input type="radio" name="pergunta3" id="resposta3">Duas vezes
+            </label>
+            <label for="resposta4">
+                <input type="radio" name="pergunta3" id="resposta4">Três ou mais vezes
+            </label>
+        </div>
+        <!--quarta pergunta do formulario-->
+        <div class="campo">
+            <label for="maquina"><strong>O que você faz com a água da máquina de lavar?</strong></label>
+            <select name="pergunta4" id="maquina">
+                <option selected disabled value="">Selecione</option>
+                <option>Descarto</option>
+                <option>Reutilizo</option>
+                <option>Não tenho máquina de lavar</option>
+            </select>
+        </div>
+        <!--quinta pergunta do formulario-->
+        <div class="campo">
+            <label><strong>Quando foi a última vez que ouviu falar sobre a importância da economia de água?</strong></label>
+            <label for="resp1">
+                <input type="radio" name="pergunta5" id="resp1" checked>Menos de um ano
+            </label>
+            <label for="resp2">
+                <input type="radio" name="pergunta5" id="resp2">De um a dois anos
+            </label>
+            <label for="resp3">
+                <input type="radio" name="pergunta5" id="resp3">De dois a três anos
+            </label>
+            <label for="resp4">
+                <input type="radio" name="pergunta5" id="resp4">Mais do que três anos
+            </label>
+            <label for="resp5">
+                <input type="radio" name="pergunta5" id="resp5">Nunca ouvi falar
+            </label>
+        </div>
+        <!--sexta pergunta do formulario-->
+        <div class="campo">
+            <label for="louça"><strong>Costuma fechar a torneira enquanto ensaboa a louça?</strong></label>
+            <select name="pergunta6" id="louça">
+                <option selected disabled value="">Selecione</option>
+                <option>Sim</option>
+                <option>Não</option>
+            </select>
+        </div>
+        <!--setima pergunta do formulario-->
+        <div class="campo">
+            <label for="importante"><strong>Você considera o tema de economia de água importante?</strong></label>
+            <select name="pergunta7" id="importante">
+                <option selected disabled value="">Selecione</option>
+                <option>Sim</option>
+                <option>Não</option>
+            </select>
+        </div>
+        <!--solução-->
+        <div class="campo">
+            <label for="caixatexto"><strong>Nos conte o que costuma fazer para economizar água durante seu cotidiano</strong></label>
+            <br>
+            <textarea name="caixatexto" id="caixatexto" cols="60" rows="5"></textarea>
+        </div>
+            <button type="submit" class="botao">Enviar</button>
+        </div>
+        <br><br><br>
+    </form>
+        
+    
+</body>
+</html>
